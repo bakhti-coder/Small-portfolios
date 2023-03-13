@@ -1,0 +1,69 @@
+/******* Services  ***********/
+@use "../global.scss";
+#Services {
+  padding-top: 200px;
+  margin-bottom: 100px;
+  .services__tittle {
+    h3 {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #ff5e69;
+    }
+    h1 {
+      padding-top: 37px;
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 59px;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #000000;
+    }
+  }
+  .product__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .product__item__list {
+      list-style-type: none;
+      padding-top: 90px;
+      img {
+        padding-bottom: 35px;
+      }
+      h4 {
+        padding-bottom: 20px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        color: #000000;
+      }
+      p {
+        padding-bottom: 40px;
+        font-size: 16px;
+        line-height: 28px;
+        color: #666666;
+      }
+      ul {
+        li {
+          margin-left: 15px;
+          padding-bottom: 10px;
+          list-style-type: square;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 28px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .product__item__list {
+    text-align: center;
+  }
+}

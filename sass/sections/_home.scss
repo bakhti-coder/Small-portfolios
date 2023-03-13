@@ -1,0 +1,70 @@
+/****************Home Start*************/
+@use '../global.scss';
+.home__text {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .right__text {
+    h1 {
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 82px;
+      letter-spacing: 2px;
+      color: #000000;
+      span {
+        letter-spacing: 2px;
+        color: #ff5e69;
+      }
+    }
+    p {
+      padding-top: 30px;
+      font-size: 22px;
+      line-height: 33px;
+      color: #666666;
+    }
+    button {
+      cursor: pointer;
+      margin: 20px 50px 0 0;
+      padding: 15px 18px;
+      font-size: 18px;
+      color: white;
+      background: #000000;
+      border-radius: 0px;
+    }
+    a {
+      font-size: 18px;
+      line-height: 18px;
+      color: #000000;
+      span {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 1300px) {
+//     .home__text {
+//         margin: 0 !important;
+//     }
+// }
+@media only screen and (max-width: 1070px) {
+    .home__text {
+        flex-wrap: wrap;
+    }
+    .left__imgs img {
+      width: 100%;
+    }
+    .right__text {
+      width: 100%;
+      text-align: center;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+  .right__text {
+    h1 span {
+      font-size: 30px;
+    }
+  }
+}

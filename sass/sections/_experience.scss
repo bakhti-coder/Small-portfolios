@@ -1,0 +1,94 @@
+@use '../global.scss';
+.exprince__all {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  .exprince__tittle h1 {
+    padding-bottom: 60px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ff5e69;
+  }
+  .exprince__education-work {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    .educition__item__list {
+      margin-bottom: 25px;
+      list-style-type: none;
+      border-bottom: 2px solid #E5E5E5;
+      // background: #E5E5E5;
+      .educition__item__list__paragrp {
+        font-size: 36px;
+        line-height: 36px;
+        color: #000000;
+        padding-bottom: 50px;
+      }
+      .educition__item__list__tittle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h5 {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 26px;
+          color: #000000;
+        }
+      }
+    }
+    .expince__work {
+      width: 500px;
+      .expince__work__title {
+        padding-bottom: 60px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        color: #000000;
+      }
+      .exprince__work__item__svg-txt {
+        display: flex;
+        h5 {
+          padding-left: 10px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 26px;
+          color: #000000;
+        }
+        .exprince__work__item__data {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .education {
+    width: 500px;
+  }
+}
+.educition__item__list__txt {
+  padding-bottom: 30px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  span {
+    padding-right: 30px;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .exprince__education-work {
+    flex-wrap: wrap;
+  }
+}
